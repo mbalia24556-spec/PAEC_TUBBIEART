@@ -1,0 +1,13 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block contenido %}
+<h1>Galería del Equipo</h1>
+<img src="{% static 'img/EQUIPO_IMAGEN1.gif' %}" alt="imagen">
+<img src="{% static 'img/EQUIPO_IMAGEN2.gif' %}" alt="imagen">
+<img src="{% static 'img/EQUIPO_IMAGEN3.gif' %}" alt="imagen">
+<video width="1000" controls>
+    <source src="{% static 'videos/EQUIPO_VIDEO.mp4' %}" type="video/mp4">
+</video>
+
+{% endblock %}

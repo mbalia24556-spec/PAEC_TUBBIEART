@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TubbieArt - PAEC</title>
+    <style>
+        body { font-family: Arial; background:#f1f5f9; margin:0; padding:0; }
+        header { background:#6a5acd; padding:20px; color:white; text-align:center; }
+        nav { background:#483d8b; padding:10px; text-align:center; }
+        nav a {
+            color:white; margin:0 15px; text-decoration:none;
+            font-weight:bold;
+        }
+        nav a:hover { text-decoration:underline; }
+        .contenedor { max-width:1000px; margin:auto; padding:20px; background:white; }
+        h1 { color:#483d8b; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TubbieArt – "Un parque más vivo, un entorno más nuestro"</h1>
+</header>
+
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/objetivo/">Objetivo</a>
+    <a href="/avance1/">Avance 1</a>
+    <a href="/avance2/">Avance 2</a>
+    <a href="/avance3/">Avance 3</a>
+    <a href="/resultados/">Resultados</a>
+    <a href="/complicaciones/">Complicaciones</a>
+    <a href="/equipo/">Equipo</a>
+</nav>
+
+<div class="contenedor">
+    {% block contenido %}{% endblock %}
+</div>
+
+</body>
+</html>
